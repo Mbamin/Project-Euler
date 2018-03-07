@@ -13,6 +13,7 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 
 ub = int(input("Enter the upper bound "))
 
+#create arrays to store multiples of 3 and 5 respectively
 mult_three = []
 mult_five =[]
 
@@ -21,7 +22,10 @@ for i in range(ub):
         mult_three.append(i)
     elif i % 5 ==0:
         mult_five.append(i)
+        
 
+
+# sum the 2 arrays and return the result
 total = sum(mult_three) + sum(mult_five)
 print (total)
 
